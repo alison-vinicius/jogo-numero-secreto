@@ -1,5 +1,5 @@
 let numerosSorteados = []
-let limite
+let limite = 10
 let numeroSecreto = gerarNumeroAleatorio();
 console.log(numeroSecreto)
 let tentativas = 1;
@@ -41,7 +41,7 @@ function verificarChute() {
 
 function gerarNumeroAleatorio() {
     let numeroEscolhido =  parseInt(Math.random() * limite + 1);
-    if (numerosSorteados.length() == limite){
+    if (numerosSorteados.length == limite){
         numerosSorteados = []
     }
 
